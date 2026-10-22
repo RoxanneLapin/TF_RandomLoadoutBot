@@ -1,0 +1,142 @@
+INSERT INTO player_class (name) VALUES('LIGHT');
+INSERT INTO player_class(name) VALUES('MEDIUM');
+INSERT INTO player_class(name) VALUES('HEAVY');
+
+
+
+
+
+
+
+
+
+
+
+-- Light (player_class = 1)
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Breach Charge', 1);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Gateway', 1);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Glitch Grenade', 1);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Gravity Vortex', 1);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('H+ Infuser', 1);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Sonar Grenade', 1);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Nullifier', 1);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Thermal Bore', 1);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Tracking Dart', 1);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Vanishing Bomb', 1);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Vanishing Bomb', 1);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Vanishing Bomb', 1);
+
+-- Medium (player_class = 2)
+INSERT INTO "gadget" ("name", "player_class") VALUES ('APS Turret', 2);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Breach Drill', 2);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Data Reshaper', 2);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Defibrillator', 2);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Explosive Mine', 2);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Gas Mine', 2);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Glitch Trap', 2);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Hover Pad', 2);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Jump Pad', 2);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Zipline', 2);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Proximity Sensor', 2);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Sonar Grenade', 2);
+
+-- Heavy (player_class = 3)
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Anti-Gravity Cube', 3);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Barricade', 3);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('C4', 3);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Dome Shield', 3);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Explosive Mine', 3);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Healing Emitter', 3);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Proximity Sensor', 3);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Lockbolt', 3);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Pyro Mine', 3);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('RPG-7', 3);
+
+-- All Builds (player_class = 1, 2, 3)
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Flashbang', 1);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Flashbang', 2);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Flashbang', 3);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Frag Grenade', 1);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Frag Grenade', 2);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Frag Grenade', 3);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Gas Grenade', 1);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Gas Grenade', 2);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Gas Grenade', 3);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Goo Grenade', 1);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Goo Grenade', 2);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Goo Grenade', 3);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Pyro Grenade', 1);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Pyro Grenade', 2);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Pyro Grenade', 3);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Smoke Grenade', 1);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Smoke Grenade', 2);
+INSERT INTO "gadget" ("name", "player_class") VALUES ('Smoke Grenade', 3);
+
+
+
+
+
+
+
+-- Light (class_id = 1)
+INSERT INTO "weapon" ("name", "player_class") VALUES ('93R', 1);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('ARN-220', 1);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('Dagger', 1);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('LH1', 1);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('M11', 1);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('M26 Matter', 1);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('Recurve Bow', 1);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('SH1900', 1);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('SR-84', 1);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('Sword', 1);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('Throwing Knives', 1);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('V9S', 1);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('XP-54', 1);
+
+-- Medium (class_id = 2)
+INSERT INTO "weapon" ("name", "player_class") VALUES ('AKM', 2);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('CB-01 Repeater', 2);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('Cerberus 12GA', 2);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('Chimera-XB', 2);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('CL-40', 2);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('Dual Blades', 2);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('FAMAS', 2);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('FCAR', 2);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('Model 1887', 2);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('P90', 2);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('Pike-556', 2);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('R .357', 2);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('Riot Shield', 2);
+
+-- Heavy (class_id = 3)
+INSERT INTO "weapon" ("name", "player_class") VALUES ('.50 Akimbo', 3);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('BFR Titan', 3);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('Flamethrower', 3);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('KS-23', 3);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('Lewis Gun', 3);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('M134 Minigun', 3);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('M60', 3);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('MGL32', 3);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('SA1216', 3);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('ShAK-50', 3);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('Sledgehammer', 3);
+INSERT INTO "weapon" ("name", "player_class") VALUES ('Spear', 3);
+
+
+-- Light (player_class = 1)
+INSERT INTO "specialization" ("name", "player_class") VALUES ('Cloaking Device', 1);
+INSERT INTO "specialization" ("name", "player_class") VALUES ('Evasive Dash', 1);
+INSERT INTO "specialization" ("name", "player_class") VALUES ('Grappling Hook', 1);
+
+-- Medium (player_class = 2)
+INSERT INTO "specialization" ("name", "player_class") VALUES ('Dematerializer', 2);
+INSERT INTO "specialization" ("name", "player_class") VALUES ('Guardian Turret', 2);
+INSERT INTO "specialization" ("name", "player_class") VALUES ('Healing Beam', 2);
+INSERT INTO "specialization" ("name", "player_class") VALUES ('Shockwave', 2);
+
+
+-- Heavy (player_class = 3)
+INSERT INTO "specialization" ("name", "player_class") VALUES ('Charge ''N'' Slam', 3);
+INSERT INTO "specialization" ("name", "player_class") VALUES ('Goo Gun', 3);
+INSERT INTO "specialization" ("name", "player_class") VALUES ('Mesh Shield', 3);
+INSERT INTO "specialization" ("name", "player_class") VALUES ('Winch Claw', 3);
