@@ -51,8 +51,9 @@ async def on_ready():
 @app_commands.command(name='generate_loadout', description='Generate a random loadout')
 @app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
 @app_commands.user_install()
-async def generate_loadout(interaction: discord.Interaction):
-    desc = app_command_output.random_loadout_output()
+
+async def generate_loadout(interaction: discord.Interaction,selected_class = None):
+    desc = app_command_output.random_loadout_output(selected_class)
 
     embed = discord.Embed(
         title=f"**{interaction.user.display_name}'s Loadout**",
@@ -60,6 +61,16 @@ async def generate_loadout(interaction: discord.Interaction):
         color=discord.Color.red()
     )
     await interaction.response.send_message(embed=embed)
+
+
+@generate_loadout.autocomplete('selected_class')
+async def generate_loadout_autocomplete(interaction: discord.Interaction,current: str,) -> List[app_commands.Choice[str]]:
+    classes = ['Light','Medium','Heavy']
+    return [
+        app_commands.Choice(name=generate_loadout, value=c)
+        for c in classes if current.lower() in c.lower()
+    ]
+
 
 bot.tree.add_command(generate_loadout)
 

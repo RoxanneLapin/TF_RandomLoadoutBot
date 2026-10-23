@@ -1,9 +1,9 @@
 import randomizer
 
 
-def random_loadout_output():
+def random_loadout_output(selected_class):
     
-    loadout = randomizer.generate_loadout()
+    loadout = randomizer.generate_loadout(selected_class)
     description_embed = f"**Class**: {loadout[0]}\n" \
                         f"**Specialization**: {loadout[1]}\n" \
                         f"**Weapon**: {loadout[2]}\n" \

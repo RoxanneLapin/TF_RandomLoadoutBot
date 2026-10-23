@@ -1,11 +1,14 @@
 import random
 from data_getter import *
 
-def generate_loadout() -> list:
+def generate_loadout(selected_class = None) -> list:
 
     classes_info = get_data_class("data/base_de_donnee.db")
-    
-    selected_class = random.choice(classes_info)[1]
+
+    if(selected_class is None):
+        selected_class = random.choice(classes_info)[1]
+
+  
 
     weapons_info = get_data_for_class("data/base_de_donnee.db","weapon",selected_class)
 
@@ -28,6 +31,8 @@ def generate_loadout() -> list:
     loadout = [selected_class,selected_specialization,selected_weapon,selected_gadgets]
     
     return loadout
+
+
 
 if __name__ == '__main__':
     print(generate_loadout())
