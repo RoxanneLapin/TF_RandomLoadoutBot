@@ -52,7 +52,7 @@ async def on_ready():
 @app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
 @app_commands.user_install()
 
-async def generate_loadout(interaction: discord.Interaction,selected_class = None):
+async def generate_loadout(interaction: discord.Interaction,selected_class : str = None):
     desc = app_command_output.random_loadout_output(selected_class)
 
     embed = discord.Embed(
@@ -64,10 +64,10 @@ async def generate_loadout(interaction: discord.Interaction,selected_class = Non
 
 
 @generate_loadout.autocomplete('selected_class')
-async def generate_loadout_autocomplete(interaction: discord.Interaction,current: str,) -> List[app_commands.Choice[str]]:
+async def generate_loadout_autocomplete(interaction: discord.Interaction,current: str,) -> list[app_commands.Choice[str]]:
     classes = ['Light','Medium','Heavy']
     return [
-        app_commands.Choice(name=generate_loadout, value=c)
+        app_commands.Choice(name=c, value=c)
         for c in classes if current.lower() in c.lower()
     ]
 
